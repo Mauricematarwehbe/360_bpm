@@ -1,0 +1,95 @@
+/* Main class */
+.navbar-360bpm {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: black;
+  transition: all 0.3s ease;
+  display: flex;
+  height: 70px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Optional class to fix the navbar on top */
+.navbar-wedding-fixed {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Navbar logo */
+.navbar-wedding-logo img {
+  width: 50px;
+}
+
+/* Navbar right section (with form, links, button) */
+.navbar-360-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar item */
+.navbar-360-item {
+  flex: 0 1 auto;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* Navbar standard link */
+.navbar-360-link {
+  box-shadow: inset 0px 0 #000;
+  border-bottom: inset 3px transparent;
+  border-top: inset 3px transparent;
+  color: #85603D;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 22px;
+}
+
+.navbar-wedding-link:hover {
+  box-shadow: inset 0px 0 #3c474b;
+  background-color: none;
+  border-bottom: inset 3px #85603D;
+  border-top: inset 3px transparent;
+  font-weight: bold;
+  color: #85603D;
+  text-decoration: none;
+  padding: 22px;
+}
+
+/* Navbar dropdown menu */
+.navbar-wedding-dropdown-menu {
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+  border-color: #E6E6E6;
+}
+
+.navbar-wedding-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: #000 !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+
+.navbar-wedding-dropdown-menu li > a:hover {
+  background: transparent !important;
+  color: black !important;
+}
+
+.navbar-wedding-dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+}
